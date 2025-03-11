@@ -10,7 +10,7 @@ The **DynamicColorContainer** widget allows developers to dynamically set backgr
 - Apply dynamic background colors to containers without creating custom CSS classes.
 - Change text colors dynamically within the container while preserving the original widget structure.
 
-## Supported Color Values
+## Supported Color Value formats
 
 ### 1. `#284ce4`:
 - **Name**: Hex Code
@@ -19,40 +19,45 @@ The **DynamicColorContainer** widget allows developers to dynamically set backgr
   - Green = 76 (Hex: 4c)
   - Blue = 228 (Hex: e4)
 
-### 2. `rgb(40 76 228)`:
+### 2. `rgb( )`:
 - **Name**: RGB (Red, Green, Blue)
 - **Description**: A color model representing colors by specifying the intensity of red, green, and blue light (40, 76, and 228 respectively).
+- **Example**: rgb(40 76 228)
 
-### 3. `hsl(228.51deg 77.69% 52.55%)`:
+### 3. `hsl( )`:
 - **Name**: HSL (Hue, Saturation, Lightness)
 - **Description**: Describes colors using three components:
   - Hue: Angle on the color wheel (0–360 degrees)
   - Saturation: Percentage of color intensity
   - Lightness: Percentage of brightness
+- **Example**: hsl(228.51deg 77.69% 52.55%)
 
-### 4. `oklch(0.5 0.23 266.57)`:
+### 4. `oklch( )`:
 - **Name**: OKLCH (a perceptually uniform color model)
 - **Description**: A perceptually uniform color model using three components:
   - Lightness (L)
   - Chroma (C)
   - Hue (H)
   It is designed to be more perceptually uniform than traditional color spaces like RGB or HSL.
+- **Example**: oklch(0.5 0.23 266.57)
 
-### 5. `lab(38 32.97 -81.98)`:
+### 5. `lab( )`:
 - **Name**: CIELAB (International Commission on Illumination, Lab* model)
 - **Description**: A color model that represents color using three components:
   - L (lightness)
   - a (green to red)
   - b (blue to yellow)
   This model is based on human vision and is widely used in color science.
+- **Example**: lab(38 32.97 -81.98)
 
-### 6. `oklab(0.5 -0.01 -0.23)`:
+### 6. `oklab( )`:
 - **Name**: OKLAB (a perceptually uniform color model)
 - **Description**: Another perceptually uniform color model similar to OKLCH, with components:
   - L (lightness)
   - a (green to red)
   - b (blue to yellow)
   It is designed to align better with human perception of color differences.
+- **Example**: oklab(0.5 -0.01 -0.23)
 
 ## Dependencies
 
